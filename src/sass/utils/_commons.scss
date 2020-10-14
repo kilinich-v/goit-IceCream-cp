@@ -40,10 +40,12 @@
 
   @include for-size(tablet) {
     width: 700px;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 36px;
+    padding-right: 36px;
   }
   @include for-size(desktop) {
     width: 1050px;
+    // padding-left: 112px;
+    // padding-right: 112px;
   }
 }
