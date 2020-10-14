@@ -1,0 +1,65 @@
+.hero {
+  background-color: #ffb8ca;
+
+  &__container {
+    height: 446px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-image: url(../images/hero/mobile/pic2.png);
+    background-repeat: no-repeat;
+    background-position: left 60px bottom 0px;
+  }
+  &__title {
+    padding-top: 137px;
+    padding-bottom: 26px;
+  }
+  &__title--white {
+    margin: 0;
+    font-family: Titan One;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-align: start;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-primary;
+  }
+  &__title--accent {
+    margin: 0;
+    color: $accent;
+    width: 100%;
+    font-family: Titan One;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.15;
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &__button {
+    @include button(10px 25px, $accent);
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  &__button--white {
+    @include button(10px 25px, $bg-primary);
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #d41443;
+  }
+}
