@@ -1,0 +1,12 @@
+.site-header {
+  position: relative;
+  margin-top: 6px;
+
+  &__container {
+    @include flex-box(space-between, center);
+  }
+
+  &__logo {
+    margin-right: 61px;
+  }
+}
