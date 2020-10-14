@@ -38,11 +38,18 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @include for-size(tablet) {
-    width: 700px;
+  @include for-size(mobile) {
+    width: 320px;
     padding-left: 36px;
     padding-right: 36px;
   }
+
+  @include for-size(tablet) {
+    width: 772px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
   @include for-size(desktop) {
     width: 1050px;
     // padding-left: 112px;
