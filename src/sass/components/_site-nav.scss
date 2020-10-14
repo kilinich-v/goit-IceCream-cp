@@ -1,3 +1,29 @@
 .site-nav {
-  display: none;
+  &__list {
+    display: none;
+  }
+
+  &__button {
+    @include font(16px, 700, 1.31, 0.03em);
+    @include button(12px 49px, $bg-primary);
+    display: none;
+    top: 0;
+    right: 34px;
+    color: $accent;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: 20px;
+
+      width: 8px;
+      height: 10px;
+      background-image: url(../images/icons/arrow.svg);
+    }
+
+    @include for-size(tablet) {
+      display: block;
+      position: absolute;
+    }
+  }
 }

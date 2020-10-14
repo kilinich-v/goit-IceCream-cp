@@ -1,12 +1,22 @@
 .site-header {
-  position: relative;
-  margin-top: 6px;
+  background-color: #ffb8ca;
+  height: 502px;
 
   &__container {
     @include flex-box(space-between, center);
+    position: relative;
+    padding-top: 6px;
+
+    @include for-size(tablet) {
+      padding-top: 37px;
+    }
   }
 
   &__logo {
     margin-right: 61px;
+  }
+
+  @include for-size(tablet) {
+    height: 399px;
   }
 }
