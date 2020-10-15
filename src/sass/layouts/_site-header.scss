@@ -10,10 +10,18 @@
     @include for-size(tablet) {
       padding-top: 37px;
     }
+
+    @include for-size(desktop) {
+      width: 1200px;
+      padding-right: 75px;
+      padding-left: 6px;
+    }
   }
 
   &__logo {
-    margin-right: 61px;
+    @include for-size(desktop) {
+      margin-right: 110px;
+    }
   }
 
   @include for-size(tablet) {

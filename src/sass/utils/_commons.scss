@@ -47,9 +47,14 @@
     padding-left: 34px;
     padding-right: 34px;
   }
+
+  @include for-size(tablet-only) {
+    width: 100%;
+  }
+
   @include for-size(desktop) {
-    width: $desktop;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1050px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }

@@ -1,11 +1,29 @@
 .site-nav {
+  @include flex-box(flex-start, center);
+
   &__list {
     display: none;
+
+    @include for-size(desktop) {
+      @include flex-box(flex-start, center);
+
+      margin-right: 110px;
+    }
   }
 
-  &__button {
+  &__item {
+    @include font(16px, 700, 1.31, 0.01em);
+    color: $text-primary;
+    padding: 12px 0;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__action {
     @include font(16px, 700, 1.31, 0.03em);
-    @include button(12px 49px, $bg-primary);
+    @include button(12px 37px, $bg-primary);
     display: none;
     top: 0;
     right: 34px;
@@ -14,16 +32,27 @@
     &:after {
       content: '';
       display: inline-block;
-      margin-left: 20px;
+      margin-left: 10px;
 
       width: 8px;
       height: 10px;
       background-image: url(../images/icons/arrow.svg);
     }
 
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+
     @include for-size(tablet) {
       display: block;
       position: absolute;
+      margin-top: 42px;
+    }
+
+    @include for-size(desktop) {
+      position: static;
+      margin-top: 0;
     }
   }
 }

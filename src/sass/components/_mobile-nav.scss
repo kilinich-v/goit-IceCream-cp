@@ -2,12 +2,21 @@
   font-family: DM Sans;
   color: $text-primary;
 
-  &__container {
+  &__frame {
     position: absolute;
-    width: 250px;
-    min-height: 502px;
     top: 0;
     right: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    & .is-open {
+      pointer-events: auto;
+    }
+  }
+
+  &__container {
+    width: 250px;
+    min-height: 502px;
     padding: 60px 21px;
     transform: translateX(120%);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
@@ -39,7 +48,9 @@
     }
 
     &--close {
-      padding-right: 220px;
+      @include for-size(tablet) {
+        margin-right: 190px;
+      }
     }
   }
 
@@ -57,6 +68,11 @@
       width: 8px;
       height: 10px;
       background-image: url(../images/icons/arrow.svg);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
     }
   }
 
@@ -83,5 +99,9 @@
       height: 14px;
       stroke: #fff;
     }
+  }
+
+  @include for-size(desktop) {
+    display: none;
   }
 }
