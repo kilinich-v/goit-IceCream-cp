@@ -16,7 +16,18 @@
 <body>
   <div class="container">
     <div class="big-img">
-      <img src="./images/text-slider/ice-cream-big-img-mob.png" alt="">
+      <picture>
+        <source
+          srcset="./images/text-slider/ice-cream-big-img-desk.png 1x, ./images/text-slider/ice-cream-big-img-desk@2x.png 2x"
+          media="(min-width: 1200px)" />
+        <source
+          srcset="./images/text-slider/ice-cream-big-img-tab.png 1x, ./images/text-slider/ice-cream-big-img-tab@2x.png 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="./images/text-slider/ice-cream-big-img-mob.png 1x, ./images/text-slider/ice-cream-big-img-mob@2x.png 2x"
+          media="(max-width: 767px)" />
+        <img src="./images/text-slider/ice-cream-big-img-desk.png" alt="колаж картинок с мороженным" />
+      </picture>
     </div>
     <div class="slider">
 
