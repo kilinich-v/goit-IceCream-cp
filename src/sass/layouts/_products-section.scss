@@ -13,7 +13,6 @@ p{
 }
 
 .products-section{
-    // mobile
     padding-top: 121px;
     padding-bottom: 98px;
     font-family: Titan One;
@@ -24,11 +23,32 @@ p{
     letter-spacing: 0.04em;
     color: $text-primary;
 
+    @include for-size(tablet){
+        padding-top: 122px;
+        padding-bottom: 112px;
+    }
+
+    @include for-size(desktop){
+        padding-top: 127px;
+        padding-bottom: 119px;
+    }
+
     &__subtitle{
         margin-bottom: 15px;
         font-size: 18px;
         line-height: 1.16;
         color: $text-decoration;
+
+        @include for-size(tablet){
+            font-size: 26px;
+            line-height: 1.15;
+        }
+
+        @include for-size(desktop){
+            font-size: 30px;
+            line-height: 1.13;
+        }
+
     }
 
     &__title{
@@ -36,11 +56,23 @@ p{
         font-size: 34px;
         line-height: 1.14;
         color: $accent;
+
+        @include for-size(tablet){
+            margin-bottom: 150px;
+            font-size: 48px;
+        }
+
+        @include for-size(desktop){
+            margin-bottom: 259px;
+            font-size: 58px;
+        }
     }
 
-    // &__list{
-    //     display: flex;
-    // }
+    &__list{
+        @include for-size(tablet){
+                display: flex;
+        }
+    }  
 }
 
 .products-item{
@@ -49,6 +81,21 @@ p{
     padding-bottom: 111px;
     margin-bottom: 130px;  
     border-radius: 24px;
+
+    @include for-size(tablet){
+        width: calc((100% - 40px) /3);
+        margin-right: 20px;  
+        margin-bottom: 0;
+        padding-top: 152px;
+        padding-bottom: 120px;  
+    }
+
+    @include for-size(desktop){
+        width: calc((100% - 60px) /3);
+        margin-right: 30px; 
+        padding-top: 163px;
+        padding-bottom: 152px;     
+    }
 
     &--first{
         background-color:#FFB8CA;
@@ -61,6 +108,10 @@ p{
     &--third{
         background-color: #C2E297;
         margin-bottom: 0;
+        
+        @include for-size(tablet){
+            margin-right: 0;    
+        }
     }
 
     // ДОБАВЛЯЕТ IMG СТРЕЛКУ
@@ -82,24 +133,52 @@ p{
             {
                 background-image: url(../images/products/arrow-right-40@2x.png);
             }
+        
+        @include for-size(tablet){
+            bottom: 40px;    
+        }
+
+        @include for-size(desktop){
+            bottom: 50px;    
+        }
+        
     }
 
     &__img{
         position: absolute;
         top: -113px;
-        // top: 0;
-        left: 16px;
-        // transform: translateY(-113px);
-        max-width: 249px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media (max-width: #{$tablet - 1}){
+            max-width: 249px;
+        }
+
+        @include for-size(tablet){
+            top: -104px;   
+            width: 220px;
+        }
+
+        @include for-size(desktop){
+            top: -210px;     
+            width: 335px;
+        }
     }
 
     &__title{
         position: relative;
         display: block;
         margin-bottom: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 36px;
         font-size: 20px;
         line-height: 1.15;
+
+        @include for-size(desktop){
+            margin-bottom: 32px;
+            padding-bottom: 38px;
+            font-size: 30px;
+            line-height: 1.13;    
+        }
 
         // ДОБАВЛЯЕТ IMG 3 ТОЧКИ
         &::after{
@@ -131,5 +210,17 @@ p{
         font-size: 14px;
         line-height: 1.5;
         text-transform: none;
+
+        @include for-size(tablet){
+            padding-right: 11px;
+            padding-left: 11px;
+            line-height: 1.7;
+        }
+
+        @include for-size(desktop){
+            padding-right: 44px;
+            padding-left: 44px;
+            font-size: 16px;
+        }
     }   
 }
