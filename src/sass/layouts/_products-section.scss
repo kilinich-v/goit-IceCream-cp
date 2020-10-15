@@ -4,6 +4,14 @@ ul{
     list-style: none;
 }
 
+h2,
+h3, 
+h4, 
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .products-section{
     // mobile
     padding-top: 121px;
@@ -17,15 +25,17 @@ ul{
     color: $text-primary;
 
     &__subtitle{
-    font-size: 18px;
-    line-height: 1.16;
-    color: $text-decoration;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 1.16;
+        color: $text-decoration;
     }
 
     &__title{
-    font-size: 34px;
-    line-height: 1.14;
-    color: $accent;
+        margin-bottom: 144px;
+        font-size: 34px;
+        line-height: 1.14;
+        color: $accent;
     }
 
     // &__list{
@@ -34,7 +44,9 @@ ul{
 }
 
 .products-item{
-    // max-width: 280px;
+    position: relative;
+    padding-top: 161px;
+    padding-bottom: 111px;
     margin-bottom: 130px;  
     border-radius: 24px;
 
@@ -51,29 +63,73 @@ ul{
         margin-bottom: 0;
     }
 
+    // ДОБАВЛЯЕТ IMG СТРЕЛКУ
+    &::after{
+        position: absolute;
+        bottom: 41px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/products/arrow-right-40.png);
+        background-size: contain;
+
+        @media screen and (min-device-pixel-ratio: 2),
+               screen and (min-resolution: 192dpi),
+               screen and (min-resolution: 2dppx) 
+            {
+                background-image: url(../images/products/arrow-right-40@2x.png);
+            }
+    }
+
     &__img{
+        position: absolute;
+        top: -113px;
+        // top: 0;
+        left: 16px;
+        // transform: translateY(-113px);
         max-width: 249px;
-        margin-bottom: 22px;
     }
 
     &__title{
+        position: relative;
+        display: block;
         margin-bottom: 30px;
+        padding-bottom: 30px;
         font-size: 20px;
         line-height: 1.15;
-    }
 
-    // СЛАЙДЕР
+        // ДОБАВЛЯЕТ IMG 3 ТОЧКИ
+        &::after{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            display: block;
+            width: 26px;
+            height: 6px;
+            background-image: url(../images/products/dots.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media screen and (min-device-pixel-ratio: 2),
+                   screen and (min-resolution: 192dpi),
+                   screen and (min-resolution: 2dppx){
+                    background-image: url(../images/products/dots@2x.png);
+                }
+        }
+    }
 
     &__text{
         padding-right: 41px;
         padding-left: 39px;
-        padding-bottom: 30px;
         font-family: DM Sans;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.5;
-    }
-
-    // SVG
-
+        text-transform: none;
+    }   
 }
