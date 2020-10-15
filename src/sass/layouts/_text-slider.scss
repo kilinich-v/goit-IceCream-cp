@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: DM Sans;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.big-img {
+  margin-left: -15px;
+}
+.single-item {
+  background-color: aqua;
+}
+.slider {
+  width: 280px;
+}
+.slider__avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 29px;
+  margin-top: 80px;
+}
+.slider__bg {
+  position: relative;
+  width: 280px;
+  background-color: #fafafa;
+  padding-top: 43px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.slider__quote {
+  width: 180px;
+  height: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+    0deg,
+    #e1e1e1 1.56%,
+    #fafafa 1.56%,
+    #fafafa 50%,
+    #e1e1e1 50%,
+    #e1e1e1 51.56%,
+    #fafafa 51.56%,
+    #fafafa 100%
+  );
+  background-size: 64px 64px;
+}
+.slider__quotes {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 60px;
+  width: 54px;
+  height: 40px;
+}
+.slider__text {
+  position: absolute;
+  margin-top: -278px;
+  margin-left: 49px;
+  width: 180px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 246%;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.slider__points {
+  width: 290px;
+}
+.slider__points-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  color: #c7133e;
+}
+.slider__points-list-item {
+  margin-left: 10px;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #c7133e;
+  background-color: #c7133e;
+  border-radius: 50%;
+}
+.slider__adress {
+  width: 290px;
+}
+.slider__adress-text {
+  width: 180px;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  font-weight: 500;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.slider__adress-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+}
+.slider__adress-item {
+  margin-left: 10px;
+}
+.slider__adress-item--round {
+  margin-left: 10px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+.slider__adress-item--img {
+  width: 12px;
+}
