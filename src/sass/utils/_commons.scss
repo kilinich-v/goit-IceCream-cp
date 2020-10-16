@@ -51,8 +51,8 @@
   }
 
   @include for-size(desktop) {
-    width: 1050px;
-    // padding-left: 112px;
-    // padding-right: 112px;
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 }

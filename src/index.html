@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <section class="how-made overlay">
+    <section id="how-made" class="how-made overlay">
       <div class="container">
         <!-- title -->
         <div class="how-made__title">
@@ -41,7 +41,15 @@
                 ./images/production/tablet/pic1_tablet@2x.png 2x,
                 ./images/production/tablet/pic1_tablet@3x.png 3x
               "
-              media="(min-width: 768px)"
+              media="(max-width: 1199px)"
+            />
+            <source
+              srcset="
+                ./images/production/desktop/pic1_desktop.png    1x,
+                ./images/production/desktop/pic1_desktop@2x.png 2x,
+                ./images/production/desktop/pic1_desktop@3x.png 3x
+              "
+              media="(min-width: 1200px)"
             />
             <img
               src="./images/production/mobile/pic1.png"
