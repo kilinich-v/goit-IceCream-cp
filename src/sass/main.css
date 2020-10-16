@@ -629,6 +629,12 @@ html {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container-locations {
+    padding: 0 115px;
+  }
+}
+
 .our-locations {
   background-color: #fff5f6;
   margin-top: 170px;
@@ -820,6 +826,12 @@ html {
   height: 44px;
   width: 160px;
   margin: 0 auto 10px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.our-locations__button:hover, .our-locations__button:focus {
+  background: #c7133e;
 }
 
 @media screen and (min-width: 768px) {
@@ -861,6 +873,12 @@ html {
   height: 44px;
   width: 160px;
   margin: 0 auto;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.our-locations__franchize:hover, .our-locations__franchize:focus {
+  background: #ecebeb;
 }
 
 @media screen and (min-width: 768px) {
