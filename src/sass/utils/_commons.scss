@@ -53,7 +53,7 @@
   }
 
   @include for-size(desktop) {
-    width: 1050px;
+    width: $desktop;
     padding-left: 75px;
     padding-right: 75px;
   }
