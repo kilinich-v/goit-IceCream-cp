@@ -21,7 +21,7 @@
     transform: translateX(120%);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     background-color: #e17992;
-    transition: transform 0.35s ease-in-out;
+    transition: transform 0.25s ease-in-out;
     z-index: 999;
 
     &.is-open {

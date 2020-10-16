@@ -1,5 +1,6 @@
 .site-nav {
   @include flex-box(flex-start, center);
+  font-family: DM Sans;
 
   &__list {
     display: none;
@@ -12,18 +13,23 @@
   }
 
   &__item {
-    @include font(16px, 700, 1.31, 0.01em);
+    @include font(16px, 700, 1.31, normal);
+    font-family: inherit;
     color: $text-primary;
-    padding: 12px 0;
 
     &:not(:last-child) {
-      margin-right: 35px;
+      margin-right: 33px;
     }
+  }
+
+  &__link {
+    padding: 12px 0;
   }
 
   &__action {
     @include font(16px, 700, 1.31, 0.03em);
     @include button(12px 37px, $bg-primary);
+    font-family: inherit;
     display: none;
     top: 0;
     right: 34px;
@@ -45,7 +51,7 @@
     }
 
     @include for-size(tablet) {
-      display: block;
+      display: inline-block;
       position: absolute;
       margin-top: 42px;
     }
