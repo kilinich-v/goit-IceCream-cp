@@ -27,4 +27,8 @@
   @include for-size(tablet) {
     height: 399px;
   }
+
+  @include for-size(desktop) {
+    height: 665px;
+  }
 }
