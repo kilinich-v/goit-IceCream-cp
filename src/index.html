@@ -1,148 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet" />
+    <title>Placeholder title</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/html" href="./slick/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/html"
+      href="./slick/slick/slick-theme.css"
+    />
+  </head>
 
+  <body>
+    <div class="container">
+      <div class="big-img">
+        <picture>
+          <source
+            srcset="
+              ./images/text-slider/ice-cream-big-img-desk.png    1x,
+              ./images/text-slider/ice-cream-big-img-desk@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/text-slider/ice-cream-big-img-tab.png    1x,
+              ./images/text-slider/ice-cream-big-img-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/text-slider/ice-cream-big-img-mob.png    1x,
+              ./images/text-slider/ice-cream-big-img-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/text-slider/ice-cream-big-img-desk.png"
+            alt="колаж картинок с мороженным"
+          />
+        </picture>
+      </div>
+      <div class="sl">
+        <div class="slider">
+          <img
+            class="slider__avatar"
+            src="./images/text-slider/avatar-mob-01.png"
+            alt=""
+          />
 
-  <title>Placeholder title</title>
-  <!-- Сюда будет всталена ссылка на файл стилей -->
-  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-  <link rel="stylesheet" type="text/html" href="./slick/slick/slick.css">
-  <link rel="stylesheet" type="text/html" href="./slick/slick/slick-theme.css">
-</head>
+          <div class="slider__bg">
+            <img
+              class="slider__quotes"
+              src="./images/text-slider/quotes-mob-01.png"
+            />
 
-<body>
-  <div class="container">
-    <div class="big-img">
-      <picture>
-        <source
-          srcset="./images/text-slider/ice-cream-big-img-desk.png 1x, ./images/text-slider/ice-cream-big-img-desk@2x.png 2x"
-          media="(min-width: 1200px)" />
-        <source
-          srcset="./images/text-slider/ice-cream-big-img-tab.png 1x, ./images/text-slider/ice-cream-big-img-tab@2x.png 2x"
-          media="(min-width: 768px)" />
-        <source
-          srcset="./images/text-slider/ice-cream-big-img-mob.png 1x, ./images/text-slider/ice-cream-big-img-mob@2x.png 2x"
-          media="(max-width: 767px)" />
-        <img src="./images/text-slider/ice-cream-big-img-desk.png" alt="колаж картинок с мороженным" />
-      </picture>
+            <div class="slider__quote"></div>
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <div class="slider__points">
+            <ul class="slider__points-list">
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+            </ul>
+          </div>
+          <div class="slider__adress">
+            <p class="slider__adress-text">Emily, Los Angeles</p>
+            <ul class="slider__adress-list">
+              <li class="slider__adress-item">
+                <img
+                  class="slider__adress-item--img"
+                  src="./images/text-slider/adress-mob-01.png"
+                />
+              </li>
+              <li class="slider__adress-item--round"></li>
+              <li class="slider__adress-item--round"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider">
+          <img
+            class="slider__avatar"
+            src="./images/text-slider/avatar-mob-02.png"
+            alt=""
+          />
+
+          <div class="slider__bg">
+            <img
+              class="slider__quotes"
+              src="./images/text-slider/quotes-mob-01.png"
+            />
+
+            <div class="slider__quote"></div>
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <div class="slider__points">
+            <ul class="slider__points-list">
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+            </ul>
+          </div>
+          <div class="slider__adress">
+            <p class="slider__adress-text">Emily, Los Angeles</p>
+            <ul class="slider__adress-list">
+              <li class="slider__adress-item--round"></li>
+              <li class="slider__adress-item">
+                <img
+                  class="slider__adress-item--img"
+                  src="./images/text-slider/adress-mob-01.png"
+                />
+              </li>
+              <li class="slider__adress-item--round"></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider">
+          <img
+            class="slider__avatar"
+            src="./images/text-slider/avatar-mob-03.png"
+            alt=""
+          />
+
+          <div class="slider__bg">
+            <img
+              class="slider__quotes"
+              src="./images/text-slider/quotes-mob-01.png"
+            />
+
+            <div class="slider__quote"></div>
+            <div class="slider__text">
+              <p>
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+                Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
+                Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+          </div>
+          <div class="slider__points">
+            <ul class="slider__points-list">
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+              <li class="slider__points-list-item"></li>
+            </ul>
+          </div>
+          <div class="slider__adress">
+            <p class="slider__adress-text">Emily, Los Angeles</p>
+            <ul class="slider__adress-list">
+              <li class="slider__adress-item--round"></li>
+              <li class="slider__adress-item--round"></li>
+              <li class="slider__adress-item">
+                <img
+                  class="slider__adress-item--img"
+                  src="./images/text-slider/adress-mob-01.png"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="sl">
-      <div class="slider">
-
-        <img class="slider__avatar" src="./images/text-slider/avatar-mob-01.png" alt="">
-
-        <div class="slider__bg">
-          <img class="slider__quotes" src="./images/text-slider/quotes-mob-01.png">
-
-          <div class="slider__quote">
-          </div>
-          <div class="slider__text">
-            <p>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-              sem. In hendrerit nulla quam nunc, accumsan
-              congue. Lorem ipsum primis in nibh vel risus.</p>
-
-          </div>
-        </div>
-        <div class="slider__points">
-          <ul class="slider__points-list">
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-          </ul>
-        </div>
-        <div class="slider__adress">
-          <p class="slider__adress-text">Emily, Los Angeles</p>
-          <ul class="slider__adress-list">
-            <li class="slider__adress-item"><img class="slider__adress-item--img"
-                src="./images/text-slider/adress-mob-01.png"> </li>
-            <li class="slider__adress-item--round"></li>
-            <li class="slider__adress-item--round"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="slider">
-
-        <img class="slider__avatar" src="./images/text-slider/avatar-mob-02.png" alt="">
-
-        <div class="slider__bg">
-          <img class="slider__quotes" src="./images/text-slider/quotes-mob-01.png">
-
-          <div class="slider__quote">
-          </div>
-          <div class="slider__text">
-            <p>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-              sem. In hendrerit nulla quam nunc, accumsan
-              congue. Lorem ipsum primis in nibh vel risus.</p>
-
-          </div>
-        </div>
-        <div class="slider__points">
-          <ul class="slider__points-list">
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-          </ul>
-        </div>
-        <div class="slider__adress">
-          <p class="slider__adress-text">Emily, Los Angeles</p>
-          <ul class="slider__adress-list">
-            <li class="slider__adress-item--round">
-
-            </li>
-            <li class="slider__adress-item">
-              <img class="slider__adress-item--img" src="./images/text-slider/adress-mob-01.png">
-            </li>
-            <li class="slider__adress-item--round"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="slider">
-
-        <img class="slider__avatar" src="./images/text-slider/avatar-mob-03.png" alt="">
-
-        <div class="slider__bg">
-          <img class="slider__quotes" src="./images/text-slider/quotes-mob-01.png">
-
-          <div class="slider__quote">
-          </div>
-          <div class="slider__text">
-            <p>Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-              sem. In hendrerit nulla quam nunc, accumsan
-              congue. Lorem ipsum primis in nibh vel risus.</p>
-
-          </div>
-        </div>
-        <div class="slider__points">
-          <ul class="slider__points-list">
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-            <li class="slider__points-list-item"></li>
-          </ul>
-        </div>
-        <div class="slider__adress">
-          <p class="slider__adress-text">Emily, Los Angeles</p>
-          <ul class="slider__adress-list">
-            <li class="slider__adress-item--round">
-            </li>
-            <li class="slider__adress-item--round"></li>
-            <li class="slider__adress-item">
-              <img class="slider__adress-item--img" src="./images/text-slider/adress-mob-01.png">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/js.js"></script>
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
 </html>
