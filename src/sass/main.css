@@ -617,7 +617,7 @@ html {
   display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .container-locations {
     width: 100%;
   }
@@ -626,6 +626,13 @@ html {
 @media screen and (min-width: 320px) {
   .container-locations {
     padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-locations {
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
@@ -644,6 +651,7 @@ html {
 @media screen and (min-width: 1050px) {
   .our-locations {
     background-image: url(../images/locations/desktop/pic1bg.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -663,11 +671,13 @@ html {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 auto -30px;
+    width: 700px;
   }
 }
 
 @media screen and (min-width: 1050px) {
   .our-locations__adresses {
+    width: 1050px;
     top: -102px;
   }
 }
@@ -684,7 +694,7 @@ html {
   color: #907e82;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
   .our-locations__location {
     width: 100%;
     font-size: 12px;
