@@ -10,6 +10,11 @@
   font-weight: normal;
   @include font(8px, 400, 1.23, 0.04);
   color: #ffffff;
+  @include for-size(desktop) {
+    margin-right: 17px;
+    margin-top: 11px;
+    @include font(14px, 400, 1.29, 0.04);
+  }
   &:hover,
   &:focus {
     cursor: pointer;
@@ -20,6 +25,9 @@
     @include button(7px 13px, $bg-primary);
     @include font(8px, 400, 1.23, 0.04);
     color: #d41443;
+    @include for-size(desktop) {
+      @include font(14px, 400, 1.29, 0.04);
+    }
     &:hover,
     &:focus {
       cursor: pointer;

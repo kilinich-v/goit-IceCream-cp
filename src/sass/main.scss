@@ -9,6 +9,7 @@
 @import './utils/mixins';
 @import './utils/commons';
 @import './how-made';
-@import './hero';
-@import './base/common';
+@import './layouts/hero-background';
+@import './layouts/hero-container';
+@import './layouts/hero-content';
 @import './components/hero-button';

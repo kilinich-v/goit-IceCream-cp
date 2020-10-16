@@ -1,0 +1,108 @@
+.hero-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 503px;
+  @include for-size(tablet) {
+    padding-right: 34px;
+    padding-left: 34px;
+    height: 399px;
+  }
+  @include for-size(desktop) {
+    padding-right: 115px;
+    padding-left: 115px;
+    height: 665px;
+  }
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 32px bottom 0px, right 0px bottom 75px;
+  background: contain, contain;
+  background-image: url(../images/hero/mobile/pic2.png),
+    url(../images/hero/mobile/Ellipse.png);
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/hero/mobile/pic2@2x.png),
+      url(../images/hero/mobile/Ellipse@2x.png);
+  }
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(../images/hero/mobile/pic2@3x.png),
+      url(../images/hero/mobile/Ellipse@3x.png);
+  }
+
+  @include for-size(tablet) {
+    background-image: url(../images/hero/tablet/pic2.png),
+      url(../images/hero/tablet/pic3.png),
+      url(../images/hero/tablet/Ellipse.png),
+      url(../images/hero/tablet/pic1.png),
+      url(../images/hero/tablet/arrow-right.png),
+      url(../images/hero/tablet/marker.png),
+      url(../images/hero/tablet/marker.png);
+    background-position: right 247px bottom 0px, right 34px bottom 0px,
+      right 137px bottom 46px, left 34px bottom 28px, left 154px bottom 34px,
+      right 34px top 94px, right 34px top 151px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/hero/tablet/pic2@2x.png),
+        url(../images/hero/tablet/pic3@2x.png),
+        url(../images/hero/tablet/Ellipse@2x.png),
+        url(../images/hero/tablet/pic1@2x.png),
+        url(../images/hero/tablet/arrow-right@2x.png),
+        url(../images/hero/tablet/marker@2x.png),
+        url(../images/hero/tablet/marker@2x.png);
+    }
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/hero/tablet/pic2@3x.png),
+        url(../images/hero/tablet/pic3@3x.png),
+        url(../images/hero/tablet/Ellipse@3x.png),
+        url(../images/hero/tablet/pic1@3x.png),
+        url(../images/hero/tablet/arrow-right@3x.png),
+        url(../images/hero/tablet/marker@3x.png),
+        url(../images/hero/tablet/marker@3x.png);
+    }
+
+    @include for-size(desktop) {
+      background-image: url(../images/hero/desktop/pic2.png),
+        url(../images/hero/desktop/pic3.png),
+        url(../images/hero/desktop/Ellipse.png),
+        url(../images/hero/desktop/pic1.png),
+        url(../images/hero/desktop/arrow-right.png),
+        url(../images/hero/desktop/marker.png),
+        url(../images/hero/desktop/marker.png);
+      background-position: right 450px bottom 0px, right 109px bottom 0px,
+        right 267px bottom 75px, left 77px bottom 45px, left 295px bottom 56px,
+        right 97px top 156px, right 97px top 248px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images/hero/tablet/pic2@2x.png),
+          url(../images/hero/tablet/pic3@2x.png),
+          url(../images/hero/tablet/Ellipse@2x.png),
+          url(../images/hero/tablet/pic1@2x.png),
+          url(../images/hero/tablet/arrow-right@2x.png),
+          url(../images/hero/tablet/marker@2x.png),
+          url(../images/hero/tablet/marker@2x.png);
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url(../images/hero/tablet/pic2@3x.png),
+          url(../images/hero/tablet/pic3@3x.png),
+          url(../images/hero/tablet/Ellipse@3x.png),
+          url(../images/hero/tablet/pic1@3x.png),
+          url(../images/hero/tablet/arrow-right@3x.png),
+          url(../images/hero/tablet/marker@3x.png),
+          url(../images/hero/tablet/marker@3x.png);
+      }
+    }
+  }
+}
