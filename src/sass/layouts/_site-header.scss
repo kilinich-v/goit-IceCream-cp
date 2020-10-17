@@ -1,0 +1,39 @@
+.site-header {
+  background-color: #ffb8ca;
+  height: 502px;
+
+  &__container {
+    @include flex-box(space-between, center);
+    position: relative;
+    padding-top: 6px;
+    z-index: 2;
+
+    @include for-size(tablet-only) {
+      width: 100%;
+    }
+
+    @include for-size(tablet) {
+      padding-top: 37px;
+    }
+
+    @include for-size(desktop) {
+      width: 1200px;
+      padding-right: 75px;
+      padding-left: 6px;
+    }
+  }
+
+  &__logo {
+    @include for-size(desktop) {
+      margin-right: 110px;
+    }
+  }
+
+  @include for-size(tablet) {
+    height: 399px;
+  }
+
+  @include for-size(desktop) {
+    height: 665px;
+  }
+}
