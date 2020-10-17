@@ -39,20 +39,20 @@
   padding-right: 20px;
 
   @include for-size(mobile) {
-    width: 320px;
     padding-left: 36px;
     padding-right: 36px;
+    width: $mobile;
   }
 
   @include for-size(tablet) {
-    width: 772px;
-    padding-left: 36px;
-    padding-right: 36px;
+    width: $tablet;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   @include for-size(desktop) {
-    width: 1280px;
-    padding-left: 115px;
-    padding-right: 115px;
+    width: $desktop;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
