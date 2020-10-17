@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet" />
-  <title>IceCream</title>
-  <!-- Сюда будет всталена ссылка на файл стилей -->
-  <!-- inject:css -->
-  <!-- endinject -->
-  <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />-->
-</head>
-
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>IceCream</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <!-- inject:css -->
+    <!-- endinject -->
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    //= ./html/header.html
+    //= ./html/products-section.html
+    //= ./html/how-made.html
+    
+     <div class="container">
     <div class="big-img">
       <picture>
         <source
@@ -126,7 +128,75 @@
       </div>-->
   </div>
 
-  <!--  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+ 
+    <section class="our-locations container-locations" id="contacts">
+      <h2 class="hidden-header">Our locations</h2>
+      <ul class="our-locations__adresses list">
+        <li class="our-locations__location">
+          <span class="our-locations--type type1"> Cafe</span>
+          <h4>Chicago</h4>
+
+          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <div class="our-locations--line"></div>
+          <h4>Monday - Friday</h4>
+          <p class="our-locations--purple">06:00 AM - 10:00 PM</p>
+          <h4>Saturday - Sunday</h4>
+          <p class="our-locations--purple">08:00 AM - 16:00 PM</p>
+          <div class="our-locations--line"></div>
+          <p class="our-locations--contacts">
+            +61(0) 383 766 284<br />
+            noreply@envato.com
+          </p>
+        </li>
+        <li class="our-locations__location">
+          <span class="our-locations--type type2">Food truck</span>
+          <h4>Los Angeles</h4>
+
+          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <div class="our-locations--line"></div>
+          <h4>Monday - Friday</h4>
+          <p class="our-locations--purple">06:00 AM - 10:00 PM</p>
+          <h4>Saturday - Sunday</h4>
+          <p class="our-locations--purple">08:00 AM - 16:00 PM</p>
+          <div class="our-locations--line"></div>
+          <p class="our-locations--contacts">
+            +61(0) 383 766 284<br />
+            noreply@envato.com
+          </p>
+        </li>
+        <li class="our-locations__location">
+          <span class="our-locations--type type1">Cafe</span>
+          <h4>New York</h4>
+
+          <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          <div class="our-locations--line"></div>
+          <h4>Monday - Friday</h4>
+          <p class="our-locations--purple">06:00 AM - 10:00 PM</p>
+          <h4>Saturday - Sunday</h4>
+          <p class="our-locations--purple">08:00 AM - 16:00 PM</p>
+          <div class="our-locations--line"></div>
+          <p class="our-locations--contacts">
+            +61(0) 383 766 284<br />
+            noreply@envato.com
+          </p>
+        </li>
+      </ul>
+      <div class="our-locations__buttons">
+        <button type="button" class="our-locations__button">
+          Our Locations<svg>
+            <use href="../images/icons/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <button type="button" class="our-locations__franchize">
+          Franchize<svg>
+            <use href="../images/icons/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    //= ./html/footer.html
+
+     <!--  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
   <script>
@@ -137,11 +207,8 @@
       autoplaySpeed: 3000,
     });
   </script>-->
-
-  <!-- Сюда будет всталена ссылка на файл скриптов -->
-  <!-- inject:js -->
-  <!-- endinject -->
-
-</body>
-
+    <!-- Сюда будет всталена ссылка на файл скриптов -->
+    <!-- inject:js -->
+    <!-- endinject -->
+  </body>
 </html>

@@ -1,0 +1,113 @@
+<header class="site-header" id="home">
+  <div class="site-header__container container">
+    <a class="site-header__logo logo link" href=""
+      ><img src="./images/header/m-t-d/logo.png" alt="Logo Icecream"
+    /></a>
+    <nav class="site-nav">
+      <ul class="site-nav__list list">
+        <li class="site-nav__item">
+          <a class="site-nav__link link accent" href="#home">Home</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#about">About us</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#how-made">How it's made?</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#products">Our products</a>
+        </li>
+        <li class="site-nav__item">
+          <a class="site-nav__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <button class="site-nav__action">Buy now</button>
+    </nav>
+
+    <nav class="mobile-nav">
+      <button
+        class="mobile-nav__button mobile-nav__button--close link"
+        aria-expanded="false"
+        data-menu-open
+      >
+        <svg
+          class="mobile-nav__icon mobile-nav__icon--close"
+          aria-label="Open mobile menu button"
+        >
+          <use href="./images/icons/menu-icons.svg#burger"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-nav__frame">
+        <div class="mobile-nav__container" data-menu>
+          <button
+            class="mobile-nav__button mobile-nav__button--open link"
+            aria-expanded="true"
+            data-menu-close
+          >
+            <svg
+              class="mobile-nav__icon mobile-nav__icon--open"
+              aria-label="Close mobile menu button"
+            >
+              <use href="./images/icons/menu-icons.svg#close"></use>
+            </svg>
+          </button>
+          <button class="mobile-nav__action link">Buy now</button>
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link accent" href="#home">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="#about">About us</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="#how-made"
+                >How it's made?</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="#products">Our products</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="hero">
+    <div class="hero__container">
+      <section class="hero__content">
+        <div class="hero__element">
+          <h2 class="hero__title">
+            ice cream <br />
+            made with
+          </h2>
+          <h1 class="hero__title--accent">passion</h1>
+        </div>
+        <div class="hero__element">
+          <ul class="hero__list list">
+            <li class="hero__list-item">16</li>
+            <li class="hero__list-item">cafes</li>
+
+            <li class="hero__list-item">23</li>
+            <li class="hero__list-item">food tracks</li>
+          </ul>
+        </div>
+      </section>
+      <button type="button" class="hero-button">
+        <a class="link" href="#products">Products</a>
+      </button>
+      <button type="button" class="hero-button--white">
+        <a class="link" href="#how-made">How it’s made?</a>
+      </button>
+      <p class="hero__primary-text">
+        Lorem ipsum dolor sit amet, <br />
+        consectetur adipiscing elit,<br />
+        sed do eiusmod tempor<br />
+        incididunt ut labore et
+      </p>
+    </div>
+  </section>
+</header>

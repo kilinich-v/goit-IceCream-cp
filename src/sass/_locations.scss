@@ -1,0 +1,229 @@
+.hidden-header {
+  display: none;
+}
+
+.container-locations {
+  @media screen and (max-width: 319px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 320px) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 115px;
+  }
+}
+
+.our-locations {
+  background-color: #fff5f6;
+  margin-top: 170px;
+  padding-bottom: 85px;
+
+  @media screen and (min-width: 1050px) {
+    background-image: url(../images/locations/desktop/pic1bg.png);
+    background-repeat: no-repeat;
+  }
+}
+.our-locations__adresses {
+  margin-bottom: -30px;
+  position: relative;
+  top: -84px;
+
+  @media screen and (min-width: 768px) {
+    top: -78px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto -30px;
+    width: 700px;
+  }
+  @media screen and (min-width: 1050px) {
+    width: 1050px;
+    top: -102px;
+  }
+}
+.our-locations__location {
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+
+  color: #907e82;
+
+  @media screen and (max-width: 319px) {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px auto 20px;
+    padding: 43px 20px;
+  }
+
+  @media screen and (min-width: 320px) {
+    font-size: 12px;
+    line-height: 18px;
+    width: 220px;
+    margin: 0px auto 20px;
+    padding: 43px 20px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 166%;
+    margin-right: 20px;
+    margin-left: 0;
+    padding: 50px 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    width: 330px;
+    font-size: 16px;
+    padding: 50px 43px 60px;
+  }
+}
+.our-locations__location h4 {
+  color: #000000;
+  text-align: left;
+  text-transform: none;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 186%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1050px) {
+    font-size: 16px;
+  }
+}
+
+.our-locations--type {
+  display: inline-block;
+  padding: 0 22px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+.type1 {
+  background: #f0d1a5;
+}
+.type2 {
+  background: #c2e297;
+}
+
+.our-locations--line {
+  margin: 25px 0;
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin: 30px 0;
+  }
+}
+.our-locations--purple {
+  color: #ffa5ba;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+}
+.our-locations--contacts {
+  margin-bottom: 0;
+}
+.our-locations__buttons {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.our-locations__button {
+  @include button(11px, #d41342);
+  display: block;
+  color: $text-primary;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  height: 44px;
+  width: 160px;
+  margin: 0 auto 10px;
+  transition: 250ms;
+
+  &:hover,
+  &:focus {
+    background: #c7133e;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 14px 0 0;
+    width: 180px;
+  }
+  @media screen and (min-width: 1050px) {
+    margin: 0 14px 0 0;
+    width: 198px;
+  }
+
+  & svg {
+    stroke: $bg-primary;
+    width: 6px;
+    height: 12px;
+    margin-left: 8px;
+    position: relative;
+    bottom: -1px;
+  }
+}
+.our-locations__franchize {
+  @include button(11px, #ffffff);
+  display: block;
+  color: $accent;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  height: 44px;
+  width: 160px;
+  margin: 0 auto;
+  transition: 250ms;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    width: 180px;
+  }
+
+  @media screen and (min-width: 1050px) {
+    margin: 0;
+    width: 198px;
+  }
+
+  & svg {
+    stroke: #d41443;
+    width: 6px;
+    height: 12px;
+    margin-left: 8px;
+    position: relative;
+    bottom: -1px;
+  }
+}
