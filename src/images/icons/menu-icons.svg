@@ -1,0 +1,8 @@
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14" id="burger">
+    <path d="M0 1h20M0 7h20M0 13h20"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="close">
+    <path d="M1.26 1l13.48 14M1 14.74L15 1.26"></path>
+  </symbol>
+</svg>
