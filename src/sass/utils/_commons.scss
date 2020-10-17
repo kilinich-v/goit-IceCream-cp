@@ -39,8 +39,6 @@
   padding-right: 20px;
 
   @include for-size(mobile) {
-    padding-left: 36px;
-    padding-right: 36px;
     width: $mobile;
   }
 
