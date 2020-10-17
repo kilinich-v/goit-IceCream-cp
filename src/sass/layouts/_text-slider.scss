@@ -22,16 +22,19 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider {
     width: 280px;
+    padding-bottom: 170px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .slider {
     width: 620px;
+    padding-bottom: 197px;
   }
 }
 @media screen and (min-width: 1200px) {
   .slider {
     width: 929px;
+    padding-bottom: 234px;
   }
 }
 

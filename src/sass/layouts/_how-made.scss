@@ -5,12 +5,7 @@
   padding-bottom: 145px;
   background-color: $bg-secondary;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-
   @media screen and (min-width: 768px) {
-    width: 700px;
     padding-top: 130px;
     padding-bottom: 246px;
   }
