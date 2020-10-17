@@ -43,6 +43,9 @@
   @include for-size(mobile) {
     display: none;
   }
+  @include for-size(mobile-only) {
+    display: none;
+  }
   @include for-size(tablet) {
     display: flex;
     flex-direction: column;
@@ -78,6 +81,9 @@
 }
 
 .hero-primary-text {
+  @include for-size(mobile-only) {
+    display: none;
+  }
   @include for-size(mobile) {
     display: none;
   }
@@ -89,7 +95,7 @@
     @include font(8px, 400, 1.5, 0.04em);
   }
   @include for-size(desktop) {
-    margin: 112px 670px 102px 180px;
+    margin: 112px 550px 102px 180px;
     @include font(14px, 400, 1.4, 0.04em);
   }
 }
