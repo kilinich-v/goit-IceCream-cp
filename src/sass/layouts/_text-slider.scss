@@ -1,5 +1,15 @@
 .big-img {
-  margin-left: -15px;
+  display: flex;
+  justify-content: center;
+  margin-top: -48px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -107px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: -171px;
+  }
 }
 .single-item {
   background-color: aqua;
