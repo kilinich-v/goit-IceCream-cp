@@ -140,11 +140,11 @@
 
 .footer__icons {
   fill: $text-decoration;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     width: 32px;
     height: 32px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
   }
