@@ -48,19 +48,15 @@
 }
 
 .slider__avatar {
-  display: block;
-  max-width: 100%;
-  height: auto;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 29px;
-  margin-top: 80px;
 }
 .slider__bg {
   position: relative;
   width: 100%;
   background-color: #fafafa;
-  padding-top: 43px;
+  padding-top: 80px;
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
@@ -116,14 +112,11 @@
 }
 
 .slider__text {
-  position: absolute;
-  margin-top: -278px;
-  margin-left: 49px;
   width: 100%;
   font-size: 100%;
   font-style: normal;
   font-weight: 500;
-  line-height: 247%;
+  line-height: 2.47;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -154,7 +147,6 @@
 }
 @media screen and (min-width: 0px) and (max-width: 319px) {
   .slider__text {
-    position: relative;
     font-size: 12px;
     margin-top: 0px;
     margin-left: 0px;
@@ -167,7 +159,6 @@
   .slider__text {
     width: 180px;
     font-size: 13px;
-    margin-top: -265px;
     letter-spacing: 0.07em;
   }
 }
@@ -175,7 +166,6 @@
   .slider__text {
     width: 460px;
     font-size: 14px;
-    margin-top: -102px;
     line-height: 232%;
     margin-left: 70px;
     letter-spacing: 0.04em;
