@@ -5,7 +5,7 @@
 .our-locations {
   background-color: #fff5f6;
 
-  @include for-size(desktop){
+  @include for-size(desktop) {
     background-image: url(../images/locations/desktop/pic1bg.png);
     background-repeat: no-repeat;
   }
@@ -13,19 +13,18 @@
   &__list {
     position: relative;
     top: -84px;
-  
-    @media screen and (min-width: 768px) {
+
+    @include for-size(tablet) {
       top: -78px;
       display: flex;
       justify-content: space-between;
       margin: 0 auto -30px;
     }
 
-    @include for-size(desktop){
+    @include for-size(desktop) {
       top: -102px;
     }
-}
-
+  }
 }
 .our-locations__item {
   display: block;
@@ -42,17 +41,16 @@
 
   color: #907e82;
 
-  @media screen and (min-width: 320px) {
+  @include for-size(mobile) {
     width: 220px;
   }
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     font-size: 14px;
     line-height: 166%;
     margin-right: 20px;
     // margin-bottom: 0;
     margin-left: 0;
     padding: 50px 30px;
-
 
     &:last-child {
       margin-right: 0px;
@@ -75,10 +73,10 @@
   margin-bottom: 0;
   line-height: 186%;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     font-size: 14px;
   }
-  @include for-size(desktop){
+  @include for-size(desktop) {
     font-size: 16px;
   }
 }
@@ -92,7 +90,7 @@
   border-radius: 4px;
   color: white;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     font-size: 16px;
     margin-bottom: 30px;
   }
@@ -108,7 +106,7 @@
   margin: 25px 0;
   border-bottom: 1px solid #e1e1e1;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin: 30px 0;
   }
 }
@@ -117,7 +115,7 @@
   margin-top: 0;
   margin-bottom: 10px;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin-bottom: 16px;
   }
 }
@@ -125,7 +123,7 @@
   margin-bottom: 0;
 }
 .our-locations__buttons {
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     display: flex;
     justify-content: center;
   }
@@ -150,11 +148,11 @@
     background: #c7133e;
   }
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin: 0 14px 0 0;
     width: 180px;
   }
-  @include for-size(desktop){
+  @include for-size(desktop) {
     margin: 0 14px 0 0;
     width: 198px;
   }
@@ -186,12 +184,12 @@
     background: #ecebeb;
   }
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin: 0;
     width: 180px;
   }
 
-  @include for-size(desktop){
+  @include for-size(desktop) {
     margin: 0;
     width: 198px;
   }
