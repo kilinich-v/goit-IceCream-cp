@@ -16,33 +16,24 @@
 }
 .slider {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .slider {
-    width: 280px;
+  padding-top: 80px;
+  padding-bottom: 170px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+    padding-bottom: 197 px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .slider {
-    width: 620px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .slider {
-    width: 929px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 123px;
+    padding-bottom: 234px;
   }
 }
 
 .slider__avatar {
-  display: block;
-  max-width: 100%;
-  height: auto;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 29px;
-  margin-top: 80px;
 }
 .slider__bg {
   position: relative;
@@ -51,6 +42,8 @@
   padding-top: 43px;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__bg {
@@ -190,6 +183,8 @@
 
 .slider__points {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__points {
@@ -224,6 +219,8 @@
 }
 .slider__adress {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__adress {
