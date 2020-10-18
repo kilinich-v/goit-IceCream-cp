@@ -35,6 +35,18 @@
   }
 }
 
+.slider__body {
+  overflow: hidden;
+}
+
+.slider__item {
+  display: inline-block;
+
+  @media screen and (max-width: 320px) {
+    max-width: 100vw;
+  }
+}
+
 .slider__avatar {
   display: block;
   max-width: 100%;
@@ -103,40 +115,6 @@
   }
 }
 
-.slider__quotes {
-  position: absolute;
-  margin-top: -10px;
-  margin-left: 60px;
-  width: 54px;
-  height: 40px;
-}
-
-@media screen and (min-width: 0px) and (max-width: 319px) {
-  .slider__quotes {
-    position: relative;
-    margin-top: 0px;
-    margin-left: 10px;
-    width: 40px;
-    height: 30px;
-  }
-}
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .slider__quotes {
-    margin-left: 60px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .slider__quotes {
-    margin-left: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .slider__quotes {
-    margin-left: 40px;
-  }
-}
-
 .slider__text {
   position: absolute;
   margin-top: -278px;
@@ -148,6 +126,31 @@
   line-height: 247%;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.slider__text p {
+  transform-style: preserve-3d;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    width: 54px;
+    height: 40px;
+    top: -13px;
+    left: -6px;
+
+    background-image: url(../images/text-slider/quotes-mob-01.png);
+    transform: translateZ(-1px);
+
+    @media screen and (min-width: 768px) {
+      left: -32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: -39px;
+    }
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 319px) {
   .slider__text {
