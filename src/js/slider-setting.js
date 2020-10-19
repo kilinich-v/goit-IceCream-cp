@@ -3,7 +3,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 300000,
         arrows: false,
         respondTo: "slider",
         asNavFor: '.slider__adress'
@@ -12,7 +12,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 300000,
         dots: true,
         arrows: false,
         respondTo: "slider",
