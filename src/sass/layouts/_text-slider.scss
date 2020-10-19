@@ -18,20 +18,14 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .slider {
-    width: 280px;
+  padding-top: 80px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 121px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .slider {
-    width: 620px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .slider {
-    width: 929px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 123px;
   }
 }
 
@@ -50,27 +44,42 @@
 .slider__avatar {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 29px;
+  margin-bottom: 62px;
 }
 .slider__bg {
   position: relative;
   width: 100%;
-  background-color: #fafafa;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(250, 250, 250, 1) 74%,
+    rgba(0, 0, 0, 0) 74%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding-bottom: 10px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: $mobile) {
   .slider__bg {
     width: 280px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
   .slider__bg {
     width: 620px;
+    background: linear-gradient(
+      0deg,
+      rgba(250, 250, 250, 1) 0%,
+      rgba(250, 250, 250, 1) 60%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    padding-bottom: 15px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .slider__bg {
     width: 929px;
   }
@@ -92,19 +101,19 @@
   );
   background-size: 64px 64px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: $mobile) {
   .slider__quote {
     width: 180px;
     height: 270px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
   .slider__quote {
     width: 524px;
     height: 106px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .slider__quote {
     width: 822px;
     height: 74px;
@@ -113,6 +122,8 @@
 
 .slider__text {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 100%;
   font-style: normal;
   font-weight: 500;
@@ -131,23 +142,22 @@
     width: 54px;
     height: 40px;
     top: -13px;
-    left: -6px;
+    left: 2px;
 
     background-image: url(../images/text-slider/quotes-mob-01.png);
     transform: translateZ(-1px);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       left: -32px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       left: -39px;
     }
   }
 }
 @media screen and (min-width: 0px) and (max-width: 319px) {
   .slider__text {
-    font-size: 12px;
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 5px;
@@ -167,15 +177,12 @@
     width: 460px;
     font-size: 14px;
     line-height: 232%;
-    margin-left: 70px;
     letter-spacing: 0.04em;
   }
 }
 @media screen and (min-width: 1200px) {
   .slider__text {
     width: 750px;
-    margin-top: -73px;
-    margin-left: 70px;
     line-height: 2.2;
     font-size: 16px;
   }
@@ -183,6 +190,9 @@
 
 .slider__points {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__points {
@@ -208,15 +218,21 @@
   color: #c7133e;
 }
 .slider__points-list-item {
-  margin-left: 10px;
   width: 4px;
   height: 4px;
   border: 1px solid #c7133e;
   background-color: #c7133e;
   border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .slider__adress {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .slider__adress {
@@ -235,6 +251,7 @@
 }
 
 .slider__adress-text {
+  display: inline-block;
   width: 180px;
   font-size: 14px;
   line-height: 186%;
@@ -244,17 +261,18 @@
   margin-left: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: $mobile) {
   .slider__adress-text {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: $tablet) {
   .slider__adress-text {
     font-size: 16px;
+    margin-bottom: 35px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .slider__adress-text {
     font-size: 20px;
   }

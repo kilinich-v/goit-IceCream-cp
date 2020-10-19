@@ -3,10 +3,19 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000000,
+        autoplaySpeed: 3000,
+        arrows: false,
+        respondTo: "slider",
+        asNavFor: '.slider__adress'
+    });
+    $('.slider__adress').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
         dots: true,
         arrows: false,
-        variableWidth: true,
-        respondTo: "slider"
+        respondTo: "slider",
+        asNavFor: '.slider__body'
     });
 });
