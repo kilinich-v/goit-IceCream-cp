@@ -3,11 +3,11 @@
   justify-content: center;
   margin-top: -48px;
 
-  @media screen and (min-width: 768px) {
+  @include for-size(tablet) {
     margin-top: -107px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-size(desktop) {
     margin-top: -171px;
   }
 }
@@ -16,15 +16,16 @@
 }
 .slider {
   width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 80px;
 
-  @media screen and (min-width: $tablet) {
+@include for-size(tablet) {
     padding-top: 121px;
   }
 
-  @media screen and (min-width: $desktop) {
+@include for-size(desktop) {
     padding-top: 123px;
   }
 }
@@ -36,8 +37,9 @@
 .slider__item {
   display: inline-block;
 
-  @media screen and (max-width: 320px) {
+@include for-size(mobile) {
     max-width: 100vw;
+
   }
 }
 
@@ -61,12 +63,12 @@
   margin-right: auto;
   margin-left: auto;
 }
-@media screen and (min-width: $mobile) {
+@include for-size(mobile) {
   .slider__bg {
     width: 280px;
   }
 }
-@media screen and (min-width: $tablet) {
+@include for-size(tablet) {
   .slider__bg {
     width: 620px;
     background: linear-gradient(
@@ -79,7 +81,8 @@
     padding-bottom: 15px;
   }
 }
-@media screen and (min-width: $desktop) {
+
+@include for-size(desktop) {
   .slider__bg {
     width: 929px;
   }
@@ -101,19 +104,20 @@
   );
   background-size: 64px 64px;
 }
-@media screen and (min-width: $mobile) {
+@include for-size(mobile) {
   .slider__quote {
     width: 180px;
     height: 270px;
   }
 }
-@media screen and (min-width: $tablet) {
+@include for-size(tablet) {
   .slider__quote {
     width: 524px;
     height: 106px;
   }
 }
-@media screen and (min-width: $desktop) {
+
+@include for-size(desktop) {
   .slider__quote {
     width: 822px;
     height: 74px;
@@ -147,16 +151,17 @@
     background-image: url(../images/text-slider/quotes-mob-01.png);
     transform: translateZ(-1px);
 
-    @media screen and (min-width: $tablet) {
+    @include for-size(tablet) {
       left: -32px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @include for-size(desktop) {
       left: -39px;
     }
   }
 }
-@media screen and (min-width: 0px) and (max-width: 319px) {
+
+@include for-size(mobile-only) {
   .slider__text {
     margin-top: 0px;
     margin-left: 0px;
@@ -165,14 +170,14 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@include for-size(mobile) {
   .slider__text {
     width: 180px;
     font-size: 13px;
     letter-spacing: 0.07em;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@include for-size(tablet) {
   .slider__text {
     width: 460px;
     font-size: 14px;
@@ -180,7 +185,7 @@
     letter-spacing: 0.04em;
   }
 }
-@media screen and (min-width: 1200px) {
+@include for-size(desktop) {
   .slider__text {
     width: 750px;
     line-height: 2.2;
@@ -194,17 +199,17 @@
   margin-left: auto;
   margin-bottom: 15px;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@include for-size(mobile) {
   .slider__points {
     width: 290px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@include for-size(tablet) {
   .slider__points {
     width: 620px;
   }
 }
-@media screen and (min-width: 1200px) {
+@include for-size(desktop) {
   .slider__points {
     width: 926px;
   }
@@ -234,17 +239,17 @@
   margin-left: auto;
   overflow: hidden;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@include for-size(mobile) {
   .slider__adress {
     width: 290px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@include for-size(tablet) {
   .slider__adress {
     width: 620px;
   }
 }
-@media screen and (min-width: 1200px) {
+@include for-size(desktop) {
   .slider__adress {
     width: 926px;
   }
@@ -261,18 +266,19 @@
   margin-left: auto;
   margin-bottom: 30px;
 }
-@media screen and (min-width: $mobile) {
+@include for-size(mobile) {
   .slider__adress-text {
     font-size: 14px;
   }
 }
-@media screen and (min-width: $tablet) {
+@include for-size(tablet) {
   .slider__adress-text {
     font-size: 16px;
     margin-bottom: 35px;
   }
 }
-@media screen and (min-width: $desktop) {
+
+@include for-size(desktop) {
   .slider__adress-text {
     font-size: 20px;
   }
@@ -287,7 +293,7 @@
 .slider__adress-item {
   margin-left: 10px;
 }
-@media screen and (max-width: 319px) {
+@include for-size(mobile-only) {
   .slider__adress-item {
     margin-left: 0px;
   }
