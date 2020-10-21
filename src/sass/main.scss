@@ -1,0 +1,21 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'base.scss';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/mixins';
+@import './utils/commons';
+@import './utils/slick-settings';
+@import './components/site-nav';
+@import './components/mobile-nav';
+@import './components/hero-button';
+@import './layouts/site-header';
+@import './layouts/hero';
+@import './layouts/products-section';
+@import './layouts/how-made';
+@import './layouts/text-slider';
+@import './layouts/locations';
+@import './layouts/footer';

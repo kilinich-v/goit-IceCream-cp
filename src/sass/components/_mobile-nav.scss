@@ -1,0 +1,108 @@
+.mobile-nav {
+  font-family: DM Sans;
+  color: $text-primary;
+
+  &__frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    & .is-open {
+      pointer-events: auto;
+    }
+  }
+
+  &__container {
+    width: 250px;
+    min-height: 502px;
+    padding: 60px 21px;
+    transform: translateX(120%);
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    background-color: #e17992;
+    transition: transform 0.25s ease-in-out;
+    z-index: 999;
+
+    &.is-open {
+      transform: translateX(0);
+    }
+
+    @include for-size(tablet) {
+      width: 254px;
+      min-height: 1020px;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+
+    &--open {
+      position: absolute;
+      top: 23px;
+      right: 28px;
+    }
+
+    &--close {
+      @include for-size(tablet) {
+        margin-right: 190px;
+      }
+    }
+  }
+
+  &__action {
+    @include font(16px, 700, 1.31, 0.03em);
+    @include button(12px 49px, $bg-primary);
+    margin-bottom: 32px;
+    color: $accent;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: 20px;
+
+      width: 8px;
+      height: 10px;
+      background-image: url(../images/icons/arrow.svg);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__link {
+    @include font(14px, 700, 1.29, 0.06em);
+    font-family: inherit;
+  }
+
+  &__icon {
+    &--close {
+      width: 20px;
+      height: 12px;
+      stroke: $accent;
+    }
+
+    &--open {
+      width: 14px;
+      height: 14px;
+      stroke: #fff;
+    }
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}

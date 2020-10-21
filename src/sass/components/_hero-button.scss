@@ -1,0 +1,41 @@
+.hero-button {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin-right: 8px;
+  margin-top: 19px;
+  @include button(7px 13px, $accent);
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  @include font(8px, 400, 1.23, 0.04);
+  color: #ffffff;
+  @include for-size(tablet) {
+    margin-right: 8px;
+    margin-top: 8px;
+  }
+  @include for-size(desktop) {
+    margin-right: 17px;
+    margin-top: 11px;
+    @include font(14px, 400, 1.29, 0.04);
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #c7133e;
+  }
+  &--white {
+    font-family: DM Sans;
+    @include button(7px 13px, $bg-primary);
+    @include font(8px, 400, 1.23, 0.04);
+    color: #d41443;
+    @include for-size(desktop) {
+      @include font(14px, 400, 1.29, 0.04);
+    }
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: #ecebeb;
+    }
+  }
+}
