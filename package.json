@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/kilinich-v/goit-IceCream-cp",
+  "homepage": "https://github.com/fil1989.github.io/goit-IceCream-cp",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
