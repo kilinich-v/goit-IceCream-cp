@@ -1,0 +1,229 @@
+.footer {
+  background-color: $bg-secondary;
+  @include for-size(tablet-only) {
+    padding-top: 113px;
+  }
+  @include for-size(tablet) {
+    padding-top: 165px;
+  }
+}
+
+.footer-container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(tablet-only) {
+    // width: 320px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    // width: 768px;
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-right: 115px;
+    padding-left: 115px;
+  }
+}
+
+.footer-position {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-bottom: 91px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 97px;
+  }
+}
+
+.footer-title {
+  margin-bottom: 17px;
+
+  font-family: Titan one;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: $text-decoration;
+  @include for-size(tablet-only) {
+    width: 232px;
+    height: 42px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    width: 340px;
+    height: 57px;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+  @include for-size(desktop) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    margin-bottom: 15px;
+  }
+}
+
+.footer-text {
+  font-family: Titan one;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent;
+  @include for-size(tablet-only) {
+    width: 200px;
+    height: 76px;
+    margin-bottom: 43px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    width: 340px;
+    height: 110px;
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+  @include for-size(desktop) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer__item {
+  &:not(:last-child) {
+    @include for-size(tablet-only) {
+      margin-right: 29px;
+    }
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: 1199px) and (min-width: 768px) {
+      margin-right: 30px;
+    }
+  }
+  &:first-child {
+    @include for-size(desktop) {
+      margin-right: 24px;
+    }
+  }
+  &:nth-child(2) {
+    @include for-size(desktop) {
+      margin-right: 25px;
+    }
+  }
+  &:hover .footer__icons {
+    fill: $accent;
+  }
+  &:focus .footer__icons {
+    fill: $accent;
+  }
+}
+
+.footer__icons {
+  fill: $text-decoration;
+  @include for-size(mobile) {
+    width: 32px;
+    height: 32px;
+  }
+  @include for-size(tablet) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer-contact {
+  @include for-size(tablet-only) {
+    margin-bottom: 43px;
+  }
+}
+
+.footer-contact__link {
+  text-decoration: none;
+}
+
+.footer-contact__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.83;
+  color: $text-secondary;
+  text-align: right;
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  @include for-size(desktop) {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.02em;
+  }
+}
+
+.footer-contact__mobile {
+  color: $accent;
+}
+
+.footer-copyright {
+  border-top: 1px solid #e1e1e1;
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footer-copyright__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: $text-third;
+  word-wrap: break-word;
+
+  &:first-child {
+    @include for-size(tablet-only) {
+      margin-top: 22px;
+    }
+  }
+
+  &:last-child {
+    @include for-size(tablet-only) {
+      padding-bottom: 25px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    margin-top: 29px;
+    padding-bottom: 18px;
+  }
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+  }
+  @include for-size(desktop) {
+    margin-top: 9px;
+    padding-bottom: 10px;
+  }
+}

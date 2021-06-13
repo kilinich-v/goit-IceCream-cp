@@ -1,0 +1,223 @@
+.hero {
+  width: 100%;
+  background-color: #ffb8ca;
+  &__content {
+    padding-top: 193px;
+
+    @include for-size(tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 102px;
+      justify-content: space-between;
+    }
+    @include for-size(desktop) {
+      padding-top: 171px;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-family: Titan One;
+    text-transform: uppercase;
+    color: $text-primary;
+    @include font(26px, 400, 1.15, 0.04em);
+    @include for-size(tablet) {
+      @include font(22px, 400, 1.15, 0.04em);
+    }
+    @include for-size(desktop) {
+      @include font(38px, 400, 1.16, 0.04em);
+    }
+  }
+  &__title--accent {
+    margin: 0;
+    color: $accent;
+    width: 100%;
+    font-family: Titan One;
+    text-transform: uppercase;
+    @include font(48px, 500, 1, 0.01em);
+    @include for-size(tablet) {
+      @include font(36px, 400, 0.85, 0.04em);
+    }
+    @include for-size(desktop) {
+      @include font(58px, 400, 0.85, 0.04em);
+    }
+  }
+
+  &__list {
+    @include for-size(mobile) {
+      display: none;
+    }
+    @include for-size(mobile-only) {
+      display: none;
+    }
+    @include for-size(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @include for-size(desktop) {
+      align-items: flex-end;
+    }
+  }
+
+  &__list-item:nth-child(2n + 1) {
+    font-family: Titan One;
+    @include font(28px, 400, 1.14, 0.04em);
+    text-transform: uppercase;
+    color: $accent;
+    @include for-size(desktop) {
+      @include font(46px, 400, 1.14, 0.04em);
+    }
+  }
+  &__list-item:nth-child(2n) {
+    font-family: DM Sans;
+    @include font(8px, 400, 1.25, 0.04em);
+    color: $text-primary;
+    @include for-size(desktop) {
+      @include font(14px, 400, 1.29, 0.04em);
+    }
+  }
+  &__list-item:nth-child(2) {
+    margin-bottom: 14px;
+    @include for-size(desktop) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__primary-text {
+    @include for-size(mobile-only) {
+      display: none;
+    }
+    @include for-size(mobile) {
+      display: none;
+    }
+    @include for-size(tablet) {
+      display: block;
+      margin: 66px 466px 59px 120px;
+      color: $text-primary;
+      font-family: DM Sans;
+      @include font(8px, 400, 1.5, 0.04em);
+    }
+    @include for-size(desktop) {
+      margin: 112px 550px 102px 180px;
+      @include font(14px, 400, 1.4, 0.04em);
+    }
+  }
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 503px;
+    @include for-size(tablet) {
+      max-width: 768px;
+      padding-right: 34px;
+      padding-left: 34px;
+      height: 399px;
+    }
+    @include for-size(desktop) {
+      max-width: 1280px;
+      padding-right: 115px;
+      padding-left: 115px;
+      height: 665px;
+    }
+
+    background-image: url('../images/hero/mobile/pic2.png'),
+      url('../images/hero/mobile/ellipse2.png');
+    background-size: 171px, 284px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 32px bottom 0px, right 0px bottom 75px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/hero/mobile/pic2@2x.png'),
+        url('../images/hero/mobile/ellipse2@2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/hero/mobile/pic2@3x.png'),
+        url('../images/hero/mobile/ellipse2@3x.png');
+    }
+
+    @include for-size(tablet) {
+      background-image: url('../images/hero/tablet/pic2.png'),
+        url('../images/hero/tablet/pic3.png'),
+        url('../images/hero/tablet/ellipse2.png'),
+        url('../images/hero/tablet/pic1.png'),
+        url('../images/hero/tablet/arrow-right.png'),
+        url('../images/hero/tablet/marker.png'),
+        url('../images/hero/tablet/marker.png');
+      background-size: 143px, 168px, 324px, 124px, 18px, 16px, 16px;
+      background-position: right 247px bottom 0px, right 34px bottom 0px,
+        right 137px bottom 46px, left 34px bottom 28px, left 154px bottom 34px,
+        right 34px top 94px, right 34px top 151px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/hero/tablet/pic2@2x.png'),
+          url('../images/hero/tablet/pic3@2x.png'),
+          url('../images/hero/tablet/ellipse2@2x.png'),
+          url('../images/hero/tablet/pic1@2x.png'),
+          url('../images/hero/tablet/arrow-right@2x.png'),
+          url('../images/hero/tablet/marker@2x.png'),
+          url('../images/hero/tablet/marker@2x.png');
+      }
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('../images/hero/tablet/pic2@3x.png'),
+          url('../images/hero/tablet/pic3@3x.png'),
+          url('../images/hero/tablet/ellipse2@3x.png'),
+          url('../images/hero/tablet/pic1@3x.png'),
+          url('../images/hero/tablet/arrow-right@3x.png'),
+          url('../images/hero/tablet/marker@3x.png'),
+          url('../images/hero/tablet/marker@3x.png');
+      }
+
+      @include for-size(desktop) {
+        background-image: url('../images/hero/desktop/pic2.png'),
+          url('../images/hero/desktop/pic3.png'),
+          url('../images/hero/desktop/ellipse2.png'),
+          url('../images/hero/desktop/pic1.png'),
+          url('../images/hero/desktop/arrow-right.png'),
+          url('../images/hero/desktop/marker.png'),
+          url('../images/hero/desktop/marker.png');
+        background-size: 236px, 293px, 538px, 188px, 26px, 30px, 30px;
+        background-position: right 450px bottom 0px, right 109px bottom 0px,
+          right 267px bottom 75px, left 77px bottom 45px, left 295px bottom 56px,
+          right 97px top 156px, right 97px top 248px;
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/hero/tablet/pic2@2x.png'),
+            url('../images/hero/tablet/pic3@2x.png'),
+            url('../images/hero/tablet/ellipse2@2x.png'),
+            url('../images/hero/tablet/pic1@2x.png'),
+            url('../images/hero/tablet/arrow-right@2x.png'),
+            url('../images/hero/tablet/marker@2x.png'),
+            url('../images/hero/tablet/marker@2x.png');
+        }
+        @media screen and (min-device-pixel-ratio: 3),
+          screen and (min-resolution: 288dpi),
+          screen and (min-resolution: 3dppx) {
+          background-image: url('../images/hero/tablet/pic2@3x.png'),
+            url('../images/hero/tablet/pic3@3x.png'),
+            url('../images/hero/tablet/ellipse2@3x.png'),
+            url('../images/hero/tablet/pic1@3x.png'),
+            url('../images/hero/tablet/arrow-right@3x.png'),
+            url('../images/hero/tablet/marker@3x.png'),
+            url('../images/hero/tablet/marker@3x.png');
+        }
+      }
+    }
+  }
+}
